@@ -14,3 +14,9 @@ What is ETL service?
 ETL stands for extract, transform, and load and is a traditionally accepted way for organizations to combine data from multiple systems into a single database, 
 data store, data warehouse, or data lake.
 
+
+Nacl  -stateful     :SG   -stateful
+      -subnet level :     -instance level 
+
+Ephemeral ports(PPT-683)
+For any two endpoints to establish a connection, they must use ports
