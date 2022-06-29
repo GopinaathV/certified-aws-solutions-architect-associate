@@ -32,6 +32,9 @@ EC2 & ELB --cost even not used
 LAMBDA --no cost when not used
 
 Amazon DynamoDB --will incur RCU/WCUs when running and is not the best choice for storing images
+                --supports in-place atomic updates 
+                --supports increment and decrement atomic operations
+
 
 Amazon EC2 instance store  --block storage made for high trough put and low latency. 
 
@@ -46,6 +49,11 @@ content at edge locations around the world. It can serve both dynamic and static
 
 Snowball capacity 75GB
 
+Application Load Balancers-- Layer 7,HTTP(s)
+Network Load Balancers-- Layer 4,TCP & UDP
+
+Oracle SQL Developer --import a simple, 20 MB database;
+Oracle Data Pump     --to import complex databases or databases
 
 Placement group disadvantages:
 1) Although launching multiple instance types into a placement group is possible, this reduces the
@@ -54,7 +62,12 @@ likelihood that the required capacity will be available for your launch to succe
 3) You can't move an existing instance into a placement group.
 4) A placement group can span peered VPCs 
 
- 
+AWS Import/Export supports:
+1)Import to Amazon S3 
+2)Export from Amazon S3 
+3)Import to Amazon EBS 
+4)Import to Amazon Glacier
+
 !!!Keyword matching!!!
 
 Key-value storage -- DynamoDB
