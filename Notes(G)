@@ -22,20 +22,64 @@ Ephemeral ports(PPT-683)
 For any two endpoints to establish a connection, they must use ports
 
 Fargate-Serverless for Docker
+
 No EFS and EBS integration Fargate
 
 EC2 Auto Scaling --does not support multiple regions
+
 EC2 & ELB --cost even not used
+
 LAMBDA --no cost when not used
+
 Amazon DynamoDB --will incur RCU/WCUs when running and is not the best choice for storing images
+
 Amazon EC2 instance store  --block storage made for high trough put and low latency. 
+
 Amazon DynamoDB and Amazon S3 --support gateway endpoints, not interface endpoints
- EBS & Instance stores --cannot be shared between instances.
+
+EBS & Instance stores --cannot be shared between instances.
+
+CloudTrail can be created which delivers log files to an Amazon S3 bucket
+
+Amazon CloudFront is a content delivery network (CDN) that improves website performance by caching
+content at edge locations around the world. It can serve both dynamic and static content
+
+Snowball capacity 75GB
+
+
+Placement group disadvantages:
+1) Although launching multiple instance types into a placement group is possible, this reduces the
+likelihood that the required capacity will be available for your launch to succeed.
+2) A placement group can't span multiple Availability Zones.
+3) You can't move an existing instance into a placement group.
+4) A placement group can span peered VPCs 
+
+ 
 !!!Keyword matching!!!
 
 Key-value storage -- DynamoDB
 
 Concurrent Access to files + Deliver High Performance -- FSx
+
+least amount of disruption -- DMS (easy data migration) and BeanStalk (easy mgmt of code/compute)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
