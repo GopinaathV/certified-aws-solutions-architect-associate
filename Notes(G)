@@ -55,6 +55,20 @@ Network Load Balancers-- Layer 4,TCP & UDP
 Oracle SQL Developer --import a simple, 20 MB database;
 Oracle Data Pump     --to import complex databases or databases
 
+Amazon Global Accelerator endpoint --used for directing
+users to different instances of the application in different regions based on latency
+
+Amazon CloudFront --used to stream video to users across the globe using a wide variety of
+protocols that are layered on top of HTTP. This can include both on-demand video as well as real time
+streaming video.
+                  --When a user requests your content, CloudFront typically serves the requested content regardless of where
+the user is located. If you need to prevent users in specific countries from accessing your content, you can
+use the CloudFront geo restriction feature
+
+Amazon Kinesis Data Streams --collect and process data in real time. A Kinesis data stream is a set of
+shards. Each shard has a sequence of data records. Each data record has a sequence number that is
+assigned by Kinesis Data Streams
+
 Placement group disadvantages:
 1) Although launching multiple instance types into a placement group is possible, this reduces the
 likelihood that the required capacity will be available for your launch to succeed.
@@ -68,6 +82,15 @@ AWS Import/Export supports:
 3)Import to Amazon EBS 
 4)Import to Amazon Glacier
 
+EC2 Partial instance-hours are billed to the next hour.
+
+EC2-Classic --you must use security groups created specifically for EC2-Classic. When you
+launch an instance in EC2-Classic, you must specify a security group in the same region as the instance.
+You can't specify a security group that you created for a VPC when you launch an instance in EC2-Classic. 
+
+Amazon Aurora   {        --create snapshot and encrypt }
+Amazon RDS      {                                      }
+
 !!!Keyword matching!!!
 
 Key-value storage -- DynamoDB
@@ -76,8 +99,7 @@ Concurrent Access to files + Deliver High Performance -- FSx
 
 least amount of disruption -- DMS (easy data migration) and BeanStalk (easy mgmt of code/compute)
 
-
-
+cannot save data to EBS from Kinesis
 
 
 
