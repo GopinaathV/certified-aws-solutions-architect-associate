@@ -20,3 +20,22 @@ Nacl  -stateful     :SG   -stateful
 
 Ephemeral ports(PPT-683)
 For any two endpoints to establish a connection, they must use ports
+
+Fargate-Serverless for Docker
+No EFS and EBS integration Fargate
+
+EC2 Auto Scaling --does not support multiple regions
+EC2 & ELB --cost even not used
+LAMBDA --no cost when not used
+Amazon DynamoDB --will incur RCU/WCUs when running and is not the best choice for storing images
+Amazon EC2 instance store  --block storage made for high trough put and low latency. 
+Amazon DynamoDB and Amazon S3 --support gateway endpoints, not interface endpoints
+ EBS & Instance stores --cannot be shared between instances.
+!!!Keyword matching!!!
+
+Key-value storage -- DynamoDB
+
+Concurrent Access to files + Deliver High Performance -- FSx
+
+
+
