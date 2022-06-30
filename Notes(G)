@@ -91,6 +91,16 @@ You can't specify a security group that you created for a VPC when you launch an
 Amazon Aurora   {        --create snapshot and encrypt }
 Amazon RDS      {                                      }
 
+Amazon Elastic Beanstalk -- automatically handles deployment,auto-scaling,load balancing
+
+AWS Database Migration Service --to easily migrate or replicate your existing databases to Amazon RDS
+
+
+
+
+
+
+
 !!!Keyword matching!!!
 
 Key-value storage -- DynamoDB
@@ -100,6 +110,9 @@ Concurrent Access to files + Deliver High Performance -- FSx
 least amount of disruption -- DMS (easy data migration) and BeanStalk (easy mgmt of code/compute)
 
 cannot save data to EBS from Kinesis
+
+Availability -- Multi-AZ
+
 
 
 
