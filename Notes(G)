@@ -40,6 +40,10 @@ Amazon EC2 instance store  --block storage made for high trough put and low late
 
 Amazon DynamoDB and Amazon S3 --support gateway endpoints, not interface endpoints
 
+Amazon S3 -- supports writing the files using api calls
+
+Amazon S3 One zone IFA --storage class has a minimum capacity charge per object (128 KB) and a per GB retrieval fee
+
 EBS & Instance stores --cannot be shared between instances.
 
 CloudTrail can be created which delivers log files to an Amazon S3 bucket
@@ -95,9 +99,9 @@ Amazon Elastic Beanstalk -- automatically handles deployment,auto-scaling,load b
 
 AWS Database Migration Service --to easily migrate or replicate your existing databases to Amazon RDS
 
-
-
-
+AWS WAF -- The AWS Web Application Firewall (WAF) is available on the Application Load Balancer (ALB). You can
+use AWS WAF directly on Application Load Balancers (both internal and external) in a VPC, to protect
+your websites and web services. 
 
 
 
@@ -112,6 +116,10 @@ least amount of disruption -- DMS (easy data migration) and BeanStalk (easy mgmt
 cannot save data to EBS from Kinesis
 
 Availability -- Multi-AZ
+
+ reduced cost+increased bandwith+(remain connection or consistent network) -- direct connect VPC
+ 
+ 
 
 
 
