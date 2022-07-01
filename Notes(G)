@@ -21,7 +21,7 @@ Nacl  -stateful     :SG   -stateful
 Ephemeral ports(PPT-683)
 For any two endpoints to establish a connection, they must use ports
 
-Fargate-Serverless for Docker
+Fargate--Serverless for Docker.To scale just increase the number of tasks.
 
 No EFS and EBS integration Fargate
 
@@ -104,6 +104,13 @@ use AWS WAF directly on Application Load Balancers (both internal and external) 
 your websites and web services. 
 
 
+HTTP on port 80 is the default health check. 
+
+Amazon CloudFront -- The maximum size of a single file that can be delivered through Amazon CloudFront is 20 GB. This limit
+applies to all Amazon CloudFront distributions. 
+
+AWS PrivateLink --A PrivateLink is between a VPC and another resource.
+
 
 !!!Keyword matching!!!
 
@@ -117,11 +124,26 @@ cannot save data to EBS from Kinesis
 
 Availability -- Multi-AZ
 
- reduced cost+increased bandwith+(remain connection or consistent network) -- direct connect VPC
+reduced cost+increased bandwith+(remain connection or consistent network) -- direct connect VPC
  
- 
+Static=S3
+Decouple=SQS Queue
+Scalable=ASG
 
 
+!!!Lookups!!!
+
+From Dumps_SAA-C02
+137
+138
+
+
+
+
+!!!Topics-lookups!!!
+
+1) storage gateway
+2) VPC part-2
 
 
 
