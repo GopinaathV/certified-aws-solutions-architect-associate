@@ -38,6 +38,8 @@ Amazon DynamoDB --will incur RCU/WCUs when running and is not the best choice fo
 
 Amazon EC2 instance store  --block storage made for high trough put and low latency. 
 
+Amazon DynamoDB with on-demand enabled --supports automatically scaling read and write capacity
+ 
 Amazon DynamoDB and Amazon S3 --support gateway endpoints, not interface endpoints
 
 Amazon S3 -- supports writing the files using api calls
@@ -103,7 +105,6 @@ AWS WAF -- The AWS Web Application Firewall (WAF) is available on the Applicatio
 use AWS WAF directly on Application Load Balancers (both internal and external) in a VPC, to protect
 your websites and web services. 
 
-
 HTTP on port 80 is the default health check. 
 
 Amazon CloudFront -- The maximum size of a single file that can be delivered through Amazon CloudFront is 20 GB. This limit
@@ -136,7 +137,7 @@ Scalable=ASG
 From Dumps_SAA-C02
 137
 138
-
+153
 
 
 
