@@ -21,6 +21,8 @@ Nacl  -stateful     :SG   -stateful
 Ephemeral ports(PPT-683)
 For any two endpoints to establish a connection, they must use ports
 
+VPC Peering --connection between two VPC privately. VPC's can be in same or different account  
+
 Fargate--Serverless for Docker.To scale just increase the number of tasks.
 
 No EFS and EBS integration Fargate
@@ -45,9 +47,16 @@ Amazon DynamoDB and Amazon S3 --support gateway endpoints, not interface endpoin
 
 Amazon S3 -- supports writing the files using api calls
 
+There is no data transfer cost between eC2 & S3 with in same region.
+
 Amazon S3 One zone IFA --storage class has a minimum capacity charge per object (128 KB) and a per GB retrieval fee
 
 EBS & Instance stores --cannot be shared between instances.
+
+Instance stores
+- Reads a large amount of data from Amazon S3
+- Performs a multi stage analysis
+- Writes the results to Amazon DynamoDB 
 
 CloudTrail can be created which delivers log files to an Amazon S3 bucket
 
@@ -150,6 +159,7 @@ From Dumps_SAA-C02
 137
 138
 153
+179
 
 
 
