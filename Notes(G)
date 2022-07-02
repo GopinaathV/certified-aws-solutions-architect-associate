@@ -35,6 +35,7 @@ Amazon DynamoDB --will incur RCU/WCUs when running and is not the best choice fo
                 --supports in-place atomic updates 
                 --supports increment and decrement atomic operations
 
+Amazon DynamoDB Accelerator (DAX) -Reduce response time from micro to milli secs.
 
 Amazon EC2 instance store  --block storage made for high trough put and low latency. 
 
@@ -97,6 +98,10 @@ You can't specify a security group that you created for a VPC when you launch an
 Amazon Aurora   {        --create snapshot and encrypt }
 Amazon RDS      {                                      }
 
+Amazon Aurora -- provides  effective Recovery Point
+Objective (RPO) of 1 second and a Recovery Time Objective (RTO) of less than 1 minute, providing a strong
+foundation for a global business continuity plan.
+
 Amazon Elastic Beanstalk -- automatically handles deployment,auto-scaling,load balancing
 
 AWS Database Migration Service --to easily migrate or replicate your existing databases to Amazon RDS
@@ -112,8 +117,14 @@ applies to all Amazon CloudFront distributions.
 
 AWS PrivateLink --A PrivateLink is between a VPC and another resource.
 
+Amazon FSx --for Windows File Server provides fully managed, highly reliable, and scalable file storage that
+is accessible over the industry-standard Server Message Block (SMB) protocol. It is built on Windows Server,
+delivering a wide range of administrative features such as user quotas, end-user file restore, and Microsoft
+Active Directory (AD) integration
+
 
 !!!Keyword matching!!!
+
 
 Key-value storage -- DynamoDB
 
@@ -131,6 +142,7 @@ Static=S3
 Decouple=SQS Queue
 Scalable=ASG
 
+Encrypted channel --VPN
 
 !!!Lookups!!!
 
