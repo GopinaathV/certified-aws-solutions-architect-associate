@@ -7,6 +7,10 @@ Amazon Cognito lets you add user sign-up, sign-in, and access control to your we
 Amazon Cognito scales to millions of users and supports sign-in with social identity providers, such as Apple, Facebook, Google, and Amazon, 
 and enterprise identity providers via SAML 2.0 and OpenID Connect.
 
+AWS Backup --enables you to centralize and automate data protection across AWS services. 
+It helps you support your regulatory compliance or business policies for data protection
+
+
 SQS info
 This would work, but it can't be used in this scenario as the maximum execution time for a Lambda function is 15 minutes.
 
@@ -65,8 +69,8 @@ content at edge locations around the world. It can serve both dynamic and static
 
 Snowball capacity 75GB
 
-Application Load Balancers-- Layer 7,HTTP(s)
-Network Load Balancers-- Layer 4,TCP & UDP
+Application Load Balancers-- Layer 7,HTTP(s), connection termination (SG's)
+Network Load Balancers-- Layer 4,TCP & UDP , No connection termination (SG's)
 
 Oracle SQL Developer --import a simple, 20 MB database;
 Oracle Data Pump     --to import complex databases or databases
@@ -80,6 +84,8 @@ streaming video.
                   --When a user requests your content, CloudFront typically serves the requested content regardless of where
 the user is located. If you need to prevent users in specific countries from accessing your content, you can
 use the CloudFront geo restriction feature
+
+Amazon Cloudfront --For geolocation restriction
 
 Amazon Kinesis Data Streams --collect and process data in real time. A Kinesis data stream is a set of
 shards. Each shard has a sequence of data records. Each data record has a sequence number that is
