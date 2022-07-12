@@ -137,6 +137,11 @@ is accessible over the industry-standard Server Message Block (SMB) protocol. It
 delivering a wide range of administrative features such as user quotas, end-user file restore, and Microsoft
 Active Directory (AD) integration
 
+Internet Gateway --To route target to access internet
+                 --To perform network address translation (NAT) for instance 
+
+If instance ID is specified in target grp of load balancer routed to the instance using primary private address
+If IP is specified in target grp of load balancer routed to the instance using any private address
 
 !!!Keyword matching!!!
 
