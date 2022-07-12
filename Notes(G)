@@ -121,6 +121,14 @@ Amazon Elastic Beanstalk -- automatically handles deployment,auto-scaling,load b
 
 AWS Database Migration Service --to easily migrate or replicate your existing databases to Amazon RDS
 
+Data migration:
+File gateway        -- Can support only s3
+Transfer family     -- Can support s3 and efs
+DataSync            -- Can support FsX for windows,s3 and efs
+
+Advance scaling -- we can specify two condition for scale out and scale in 
+                   and the policy which provide largest no. of instances is selected
+
 AWS WAF -- The AWS Web Application Firewall (WAF) is available on the Application Load Balancer (ALB). You can
 use AWS WAF directly on Application Load Balancers (both internal and external) in a VPC, to protect
 your websites and web services. 
