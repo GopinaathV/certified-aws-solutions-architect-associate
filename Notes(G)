@@ -159,6 +159,16 @@ Scalable=ASG
 
 Encrypted channel --VPN
 
+Attribute         NAT instance         NAT Gateway
+
+Security group    Yes                  No
+Basition server   Yes                  No
+port forwarding   Yes                  No  
+
+Spot blocks -- step instance with defined duration 
+
+
+
 !!!Lookups!!!
 
 From Dumps_SAA-C02
